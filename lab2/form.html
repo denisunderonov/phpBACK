@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Andronov Denis's work</title>
+    <style>
+        main{
+            padding-top: 200px;
+            margin-bottom: 120px;
+        }
+
+        fieldset {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        legend {
+            font-size: large;
+        }
+
+        label {
+            font-size: large;
+        }
+
+        .test-logo {
+            background-color: white;
+            border-radius: 10px;
+            transform: rotate(-30deg) scale(1.5) skew(130deg, 200deg);
+        }
+
+        label:focus {
+            border: 2px solid #3498db;
+        }
+
+
+        input[required] {
+            border: 2px solid #e74c3c; 
+        }
+
+        dl, dt, dd {
+            font-size: large;
+        }
+
+        dl dt:nth-child(even),
+        dl dd:nth-child(odd) {
+            color: #3498db; 
+        }
+
+        dl dt:nth-child(odd),
+        dl dd:nth-child(even) {
+            color: #e74c3c;
+        }
+
+        input[type="checkbox"]:checked + label,
+        input[type="radio"]:checked + label {
+            text-decoration: line-through;
+        }
+
+        dd {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main_header">
+    <main>
+        
+        <div class="container">
+
+            <form action="//httpbin.org/post" method="POST">
+
+                    <fieldset class="field-one">
+                        <legend>Личная информация</legend>
+                        <label class="form-name">
+                            Ваше имя (обязательно):
+                            <input type="text" name="name" placeholder="Андронов Денис" required>
+                        </label>
+    
+                        <label class="form-birthday">
+                            Дата рождения (обязательно): 
+                            <input type="date" name="date" required>
+                        </label>
+    
+                        <label class="form-pol">
+                            Мужской:
+                            <input type="radio" name="male-female" value="male">
+                        </label>
+                        <label>
+                            Женский:
+                            <input type="radio" name="male-female" value="female">
+                        </label>
+                        <label class="form-password">
+                            Пароль (Обязательно):
+                            <input type="password" name="password" placeholder="********" required>
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="field-two">
+                        <legend>Контактные данные</legend>
+                        
+                        <label class="form-email">
+                            Электронная почта(Обязательно):
+                            <input type="email" name="email" placeholder="example@example.com">
+                        </label>
+
+                        <label class="form-phone">
+                            Телефон (Обязательно):
+                            <input type="tel" name="tel" placeholder="+ 7 (999) 999 99-99">
+                        </label>
+
+                        <label class="form-contact">
+                            Утро
+                            <input type="checkbox" name="morning">
+                        </label>
+                        <label>
+                            День
+                            <input type="checkbox" name="day">
+                        </label>
+                        <label>
+                            Вечер
+                            <input type="checkbox" name="evening">
+                        </label>
+
+                        <a href="back.php">Get headers</a>
+                    </fieldset>
+                    
+                    <div class="buttons">
+                        <button type="submit">Отправить</button>
+                        <button type="reset">Сбросить</button>
+                    </div>
+
+                </form>
+                
+        </div>
+
+    </main>
+
+    <footer class="main_footer">
+      
+    </footer>
+</body>
+
+</html>
