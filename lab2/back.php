@@ -9,5 +9,7 @@
 <?php 
 print_r(get_headers('https://slavaver.github.io/web-course-site/labs/web-client-dev/2023/laba02/'))
 ?>  
+
+<a href="form.html">lab2</a>
 </body>
 </html>
