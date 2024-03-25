@@ -30,7 +30,7 @@ resultButton.addEventListener('click', () => {
         }
         return response.text()
     }).then(data => {
-        console.log(data);
+        display.value = data;
     }).catch(error => {
         console.error('Пизда: ', error);
     })
