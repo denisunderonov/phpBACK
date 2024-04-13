@@ -32,6 +32,6 @@ resultButton.addEventListener('click', () => {
     }).then(data => {
         display.value = data;
     }).catch(error => {
-        console.error('Пизда: ', error);
+        console.error('ошибка ', error);
     })
 })
