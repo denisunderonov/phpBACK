@@ -115,7 +115,6 @@ header img {
 .div-edit .currentRow{
     color: var(--color_a);
     background-color: var(--back_a);
-    /* padding-left: 15px; */
 }
 
 input, select, textarea{
