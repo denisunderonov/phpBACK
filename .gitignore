@@ -1,0 +1,21 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# PHP
+vendor/
+composer.lock
+
+# Logs
+*.log
+error_log
+
+# Config (sensitive data)
+config.local.php
+.env
